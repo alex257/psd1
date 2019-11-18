@@ -1,0 +1,15 @@
+// Bootstrap Variable Overrides 
+
+/*$theme-colors: (
+  "primary": #ff6a49,
+  "secondary": #777988
+  );*/
+ 
+//Bootstrap sass files
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+h1{
+    color: orangered;
+}
