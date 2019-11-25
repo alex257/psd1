@@ -1,13 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PsdCamp</title>
+    <title>Couples Camp</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Work+Sans:400|Montserrat:400,600"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
 </head>
-<h1>Heading</h1>
+
 <body>
+    <div class="main-container">
+        <!--Header-->
+        <header class="header">
+            <div id="address" class="container mb-3">
+                <div class="row justify-content-end">
+                    <!-- <div class="col"></div> -->
+
+                    <div class="col-md-auto">
+                        <i class="fas fa-map-marker-alt mr-2"></i>123 Broadway, NY</div>
+                </div>
+            </div>
+            <nav class="navbar navbar-inverse bg-inverse navbar-expand-md navbar-light">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand mr-2">
+                    </a>
+                    <h3 class="text-white font-weight-bold text-uppercase ml-3">Grace</h3>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-uppercase ml-auto">
+                            <li class="nav-item pr-4">
+                                <a href="#home" class="active nav-link text-white">Home</a>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#welcome" class="nav-link text-white">Pages</a>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#pastor" class="nav-link text-white">Sermons</a>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#events" class="nav-link text-white">Events</a>
+                            </li>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#blog" class="nav-link text-white">Blog</a>
+                            </li>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#gallery" class="nav-link text-white">Gallery</a>
+                            </li>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a href="#contact" class="nav-link text-white">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="fas fa-search pr-4"></i>
+                    <button class="btn btn-primary btn-donate btn--small">Donate</button>
+                </div>
+            </nav>
+            <!--Hero-->
+            <div class="hero ">
+                <div class="arrows">
+                    <i class="fas fa-long-arrow-alt-left"></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                <div class="container">
+                    <div class="row d-flex flex-column justify-content-center align-items-center">
+
+                        <h5 class="hero__pretitle">June 22, 2015</h5>
+
+                        <h1 class="hero__title">couples camp</h1>
+
+                        <h2 class="hero__subtitle">Connect and grow together</h2>
+                        <button class="btn btn-lg btn-primary btn--large hero__button">Register today</button>
+                        <div class="dots">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid fluid-subheader">
+                    <div class="container subheader">
+                        <div class="subheader__row row d-flex">
+                            <div class="col-lg-1 d-flex flex-column">
+                                <div class="subheader__date bg-primary d-flex flex-column text-center">
+                                    <span>01</span>
+                                    <span>JUN 15</span>
+                                </div>
+                            </div>
+
+                            <div class="subheader__time-title col-lg-5 d-flex flex-column">
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <span class="subheader__time">Sunday 10 pm - 12 pm</span>
+                                </div>
+                                <h6 class="text-uppercase pt-1 font-weight-bold">Holy spirit: Strategic
+                                    <br>think</h6>
+                            </div>
+                            <div class="subheader__address col-lg-3 d-flex flex-column">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>123 Broadway, New York,</p>
+                                <h6>NY 10006, USA</h6>
+                            </div>
+
+                            <div class="subheader__button col-lg-2 d-flex align-items-center">
+                                <button
+                                    class="btn btn-lg text-white text-uppercase font-weight-bold">Join&nbsp;a&nbsp;group</button>
+                            </div>
+
+                            <div class="subheader__arrows col-lg-1 d-flex align-items-center">
+                                <i class="fas fa-long-arrow-alt-left mr-4"></i>
+                                <div class="arrow-line"></div>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--end of header -->
+
+        <!--welcome-->
+        <section id="welcome" class="welcome">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1">
+                        <div class="line mt-2"></div>
+                    </div>
+                    <div class="col-5">
+                        <h6 class="text-uppercase">Welcome there!</h6>
+
+                        <h2 class="pt-4">We are the church that
+                            <br class="break"> believes in
+                            <a class="text-primary">Jesus</a>, a
+                            <br>church that loves God
+                            <br> and people</h2>
+
+                        <p>Overhelmed by the gift of salvation we have found in Jesus , we have a heart for authentic
+                            worship
+                            are passionate about local church, and are on mission to see Gods kingdom established across
+                            the earth.</p>
+                        <button class="btn text-uppercase btn-primary btn--small">More</button>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <img src="img/cooperation.jpg" class="welcome__img alt=" cooperation">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end of welcome -->
+
+        <!--community -->
+        <section id="community" class="community">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="d-flex">
+                            <i class="fas fa-church fa-2x pr-3 d-flex align-self-center"></i>
+                            <h5>Our Community</h5>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas assumenda recusandae
+                            minus? Officiis
+                            voluptatem fugit deserunt itaque saepe nobis.</p>
+                        <button class="btn text-uppercase btn--small">More</button>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="d-flex">
+                            <i class="far fa-heart fa-2x pr-3 d-flex align-self-center"></i>
+                            <h5>Church Mission</h5>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas assumenda recusandae
+                            minus? Officiis
+                            voluptatem fugit deserunt itaque saepe nobis.</p>
+                        <button class="btn text-uppercase btn--small">More</button>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="d-flex">
+                            <i class="fas fa-user-plus fa-2x pr-3 d-flex align-self-center"></i>
+                            <h5>Join a Group</h5>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas assumenda recusandae
+                            minus? Officiis
+                            voluptatem fugit deserunt itaque saepe nobis.</p>
+                        <button class="btn text-uppercase btn--small">More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end of community -->
+
+        <!--gallery -->
+        <section class="section-gallery">
+            <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
+                    <div class="col-12 col-lg-3">
+                      <img class="w-100" src="img/foto1.jpeg" alt="First slide" data-target="#carouselExample" data-slide-to="0">
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <img class="w-100" src="img/foto2.jpeg" alt="First slide" data-target="#carouselExample" data-slide-to="1">
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <img class="w-100" src="img/foto3.jpeg" alt="First slide" data-target="#carouselExample" data-slide-to="2">
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <img class="w-100" src="img/foto4.jpeg" alt="First slide" data-target="#carouselExample" data-slide-to="3">
+                    </div>
+                  </div>
+                  
+                  <!--carousel inside a modal.-->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExample" data-slide-to="1"></li>
+                              <li data-target="#carouselExample" data-slide-to="2"></li>
+                              <li data-target="#carouselExample" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/foto1.jpeg" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/foto2.jpeg" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/foto3.jpeg" alt="Third slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="img/foto4.jpeg" alt="Fourth slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary text-uppercase small" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+        
+        <!--end of gallery -->
+
+        <!--events -->
+        <section id="events" class="events">
+            <div class="container-fluid fluid-events">
+
+                <div class="container events">
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <div class="line mt-2"></div>
+                        </div>
+                        <div class="col-lg-5">
+                            <h6 class="text-uppercase">Upcoming events</h6>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between">
+                        <div class="events__date-col col-lg-1 d-flex flex-column">
+                            <div
+                                class="events__date bg-primary d-flex flex-column text-center justify-content-center align-items-center">
+                                <span>01</span>
+                                <span>JUN 15</span>
+                            </div>
+                        </div>
+                        <div class="events__plan col-lg-11 d-flex">
+                            <div class="col-lg-5 d-flex justify-content-start align-self-center">
+                                <h5>Holy spirit: Strategic think</h5>
+                            </div>
+
+                            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+
+                                <i class="far fa-clock"></i>
+                                <p>Sunday,
+                                    <br> 10 pm - 12 pm</p>
+                            </div>
+                            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p class="font-weight-bold">123&nbsp;Broadway,&nbsp;New&nbsp;York,
+                                    <br> NY 10006, USA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex justify-content-between">
+                        <div class="events__date-col col-lg-1 d-flex flex-column">
+                            <div
+                                class="events__date bg-primary d-flex flex-column text-center justify-content-center align-items-center">
+                                <span>12</span>
+                                <span>JUN 15</span>
+                            </div>
+                        </div>
+                        <div class="events__plan col-lg-11 d-flex">
+                            <div class="col-lg-5 d-flex justify-content-start  align-self-center">
+                                <h5>Missions Ministry monthly
+                                    <br> meeting</h5>
+                            </div>
+
+                            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                                <i class="far fa-clock"></i>
+                                <p>Sunday,
+                                    <br> 10 pm - 12 pm</p>
+                            </div>
+                            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p class="font-weight-bold">123&nbsp;Broadway,&nbsp;New&nbsp;York,
+                                    <br> NY 10006, USA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex justify-content-between">
+                        <div class="events__date-col col-lg-1 d-flex flex-column">
+                            <div
+                                class="events__date bg-primary d-flex flex-column text-center justify-content-center align-items-center">
+                                <span>18</span>
+                                <span>JUN 15</span>
+                            </div>
+                        </div>
+                        <div class="events__plan col-lg-11 d-flex">
+                            <div class="col-lg-5 d-flex justify-content-start align-self-center">
+                                <h5>Seniors Bible study</h5>
+                            </div>
+
+                            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                                <i class="far fa-clock"></i>
+                                <p>Sunday,
+                                    <br> 10 pm - 12 pm</p>
+                            </div>
+                            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p class="font-weight-bold">123&nbsp;Broadway,&nbsp;New&nbsp;York,
+                                    <br> NY 10006, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </section>
+    <!--end of events -->
+
+    <!--blog -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1">
+                    <div class="line mt-2"></div>
+                </div>
+                <div class="col-lg-5">
+                    <h6 class="text-uppercase">From the blog</h6>
+                </div>
+                <div class="blog__arrows--hidden col-lg-6 d-flex justify-content-end">
+                    <i class="fas fa-long-arrow-alt-left mr-4"></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-10 col-lg-4">
+                    <div class="blog__img-wrapp">
+
+                        <img src="img/girl.jpeg" class="blog__img" alt="happy-girl">
+                        <div
+                            class="blog__date bg-primary d-flex flex-column text-center justify-content-center align-items-center">
+                            <span>18</span>
+                            <span>JUN 15</span>
+                        </div>
+                    </div>
+                    <h5>Lord is Sufficient for
+                        <br> all of our needs</h5>
+                    <p>by
+                        <a class="text-primary" href="#">admin</a>
+                    </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste a cupiditate molestiae
+                        eveniet
+                        distinctio aut possimus obcaecati!</p>
+                </div>
+                <div class="blog--hidden col-10 col-lg-4">
+                    <div class="blog__img-wrapp">
+                        <img src="img/blueberry.jpeg" class="blog__img" alt="giving-blueberry">
+                        <div
+                            class="blog__date bg-primary d-flex flex-column text-center justify-content-center align-items-center">
+                            <span>22</span>
+                            <span>JUN 15</span>
+                        </div>
+                    </div>
+                    <h5>3 Areas All of Us Struggle to
+                        <br> Trust God With</h5>
+                    <p>by
+                        <a class="text-primary" href="#">admin</a>
+                    </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste a cupiditate molestiae
+                        eveniet
+                        distinctio aut possimus obcaecati!</p>
+                </div>
+                <div class="blog--hidden col-10 col-lg-4">
+                    <div class="blog__img-wrapp">
+                        <img src="img/bible.jpeg" class="blog__img" alt="reading-bible">
+                        <div
+                            class="blog__date bg-primary d-flex flex-column text-center justify-content-center align-items-center">
+                            <span>10</span>
+                            <span>JUN 15</span>
+                        </div>
+                    </div>
+                    <h5>It's Time for a Comeback</h5>
+                    <p>by
+                        <a class="text-primary" href="#">admin</a>
+                    </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, iste a cupiditate molestiae
+                        eveniet
+                        distinctio aut possimus obcaecati!</p>
+                </div>
+            </div>
+    </section>
+    <!--end of blog -->
+
+    <!--pastor -->
+    <section id="pastor">
+        <div class="container d-flex">
+
+            <div class="row d-flex">
+                <div class="col-12 col-lg-8">
+                    <div class="col-lg-12 d-flex mb-5">
+                        <div class="col-lg-2">
+                            <div class="line mt-2"></div>
+                        </div>
+                        <div class="col-lg-10">
+                            <h6 class="text-uppercase">Pastor</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 d-flex">
+                        <div class="pastor__img mr-4">
+                            <img src="img/old-man.jpg" alt="pastor">
+                        </div>
+                        <div class="pastor__quote">
+                            <h2>
+                                <i class="fas fa-quote-right"></i>Every mountain <br> top is within <br>
+                                reach if you just <br> keep climbing.
+                                <i class="fas fa-quote-left"></i>
+                            </h2>
+                            <cite>John McCovey</cite>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-4">
+                    <div class="col-lg-12 d-flex mb-5">
+                        <div class="col-3 col-lg-2 pl-0">
+                            <div class="line mt-2"></div>
+                        </div>
+                        <div class="col-1 col-lg-10">
+                            <h6 class="text-uppercase">Podcast</h6>
+                        </div>
+                    </div>
+                    <div class="pastor__podcast d-flex flex-column">
+                        <div>
+                            <div class="d-flex">
+                                <i class="fas fa-play fa-play__first bg-primary"></i>
+                                <h5 class="text-uppercase">Holy spirit: Strategic think</h5>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <div class="progress ">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                        aria-valuemax="100" style="width:20%">
+                                        <span class="sr-only">20% </span>
+                                    </div>
+                                </div>
+                                <span class="">02.45/45.56</span>
+                            </div>
+                            <p class="podcast__time">Jun 22,2015.</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="d-flex">
+                                <i class="fas fa-play"></i>
+                                <h5 class="text-uppercase">3 areas all of us struggle to trust God with</h5>
+                            </div>
+                            <p class="podcast__time">Jun 22,2015.</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="d-flex">
+                                <i class="fas fa-play "></i>
+                                <h5 class="text-uppercase">It's time for a comeback</h5>
+                            </div>
+                            <p class="podcast__time">Jun 22,2015.</p>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!--end of pastor -->
+
+    <!--contact -->
+    <section id="contact" class="">
+       
+            <div class="contact container-fluid  bg-primary">
+                <div class="container d-flex">
+                <div class="contact__row row d-flex">
+                    <div class="col-12 col-lg-9 d-flex">
+                        <i class="fas fa-user-plus fa-2x"></i>
+                        <h4 class="mt-2 mr-2">New Here?</h4>
+                        <p>Find out how, where and when we workship. We hope to see you soon!</p>
+                    </div>
+                    
+                    <div class="col-12 col-lg-3 justify-content-end">
+                            <button class="btn contact__btn btn--large btn-primary">Join&nbsp;a&nbsp;group</button>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!--end of contact -->
+
+    <!--footer -->
+    <footer class="footer">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-9 d-flex align-items-center justify-content-center">
+                <p><span class="text-primary">Ancora</span> &copy; 2015 All Rights Reserved <span
+                        class="text-primary">Terms of Use</span> and <span class="text-primary">Privacy Policy</span>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer__links d-flex justify-content-end align-items-center">
+                    <div class="footer__div"><a href="#"><i class="fab fa-facebook text-muted"></i></div>
+                    </a>
+                    <div class="footer__div"><a href="#"><i class="fab fa-twitter text-muted"></i></a></div>
+                    <div class="footer__div"><a href="#"><i class="fab fa-instagram text-muted"></i></a></div>
+                    <div class="footer__div"><a href="#"><i class="fab fa-linkedin text-muted"></i></a></div>
+                    <div class="footer__div"><a href="#"><i class="fab fa-google-plus-g text-muted"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location 
+            var broadway = { lat: 40.7088387, lng: -74.0133216 };
+
+
+            // The map
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                center: { lat: 40.7088387, lng: -74.0133216 },
+                zoom: 12,
+                styles: [{ "featureType": "all", "elementType": "geometry.fill", "stylers": [{ "weight": "2.00" }] }, { "featureType": "all", "elementType": "geometry.stroke", "stylers": [{ "color": "#9c9c9c" }] }, { "featureType": "all", "elementType": "labels.text", "stylers": [{ "visibility": "on" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f2f2f2" }] }, { "featureType": "landscape", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 45 }] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [{ "color": "#eeeeee" }] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "color": "#7b7b7b" }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#46bcec" }, { "visibility": "on" }] }, { "featureType": "water", "elementType": "geometry.fill", "stylers": [{ "color": "#c8d7d4" }] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [{ "color": "#070707" }] }, { "featureType": "water", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }] }]
+            });
+
+            // The marker
+            var marker = new google.maps.Marker({ position: broadway, map: map });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_HKC2m8E5--bEntjKjJxHiqlU6Lu9mx4&callback=initMap"
+        type="text/javascript"></script>
     <script src="index.js"></script>
+
+
 </body>
+
 </html>

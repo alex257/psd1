@@ -1,0 +1,31 @@
+.section-gallery {
+  margin: 30px 0;
+}
+
+#gallery {
+  img {
+    //height: 40vw;
+    object-fit: cover;
+
+   // @include media-breakpoint-down(md) {
+    // height: 25vw;
+    //}
+
+    //@media (min-width: $bootstrap-lg) {
+    // height: 18vw;
+    //}
+    //}
+  }
+}
+
+// Crop images in lightbox.
+.carousel-item {
+  img {
+    height: 30vw;
+    object-fit: cover;
+
+    @include media-breakpoint-down(md) {
+      height: 350px;
+    }
+  }
+}

@@ -1,15 +1,43 @@
 // Bootstrap Variable Overrides 
 
-/*$theme-colors: (
+$theme-colors: (
   "primary": #ff6a49,
   "secondary": #777988
-  );*/
+  );
  
+  $primary: #ff6a49;
+  $secondary: #777988;
+
+  
+// Style anchor elements overrides.
+
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+$btn-transition: none;
+
+
 //Bootstrap sass files
 @import "node_modules/bootstrap/scss/bootstrap";
 
 
+//Sass Partials
+@import "abstracts/variables";
 
-h1{
-    color: orangered;
-}
+@import "base/base";
+
+@import "layouts/header";
+@import "layouts/footer";
+
+@import "sections/welcome";
+@import "sections/community";
+@import "sections/gallery";
+@import "sections/events";
+@import "sections/blog";
+@import "sections/pastor";
+@import "sections/contact";
+
+
+
+

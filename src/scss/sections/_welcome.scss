@@ -1,0 +1,67 @@
+.welcome {
+  .row {
+    flex-wrap: nowrap;
+  }
+  h6 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    @include media-breakpoint-down(sm) {
+      font-size: 0.7rem;
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    padding-bottom: 40px;
+    @include media-breakpoint-down(md) {
+      font-size: 1.3rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 1.1rem;
+    }
+  }
+  p {
+    color: $darkgrey;
+    padding-bottom: 30px;
+    @include media-breakpoint-down(md) {
+      font-size: 0.7rem;
+      margin-top: -25px;
+    }
+  }
+  button {
+    @include media-breakpoint-down(sm) {
+      font-size: 0.7rem;
+    }
+  }
+
+  .break {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &__img {
+    width: 450px;
+    height: 410px;
+    margin-left: 87px;
+
+    @include media-breakpoint-down(lg) {
+      width: 400px;
+      height: 360px;
+      margin-top: 78px;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 350px;
+      height: 310px;
+      margin-left: 90px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 330px;
+      height: 290px;
+      //margin: 0 auto;
+    }
+  }
+}

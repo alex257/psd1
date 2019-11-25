@@ -1,0 +1,351 @@
+.header {
+  background-color: $secondary;
+  //background-image: linear-gradient(to right, $secondary, lightgrey),url('../img/bird.jpg');
+  background-size: cover;
+  background-image: url("../img/bird.jpg");
+  background-position: center;
+  background-blend-mode: multiply;
+  position: relative;
+  overflow: hidden;
+  color: $header-text-color;
+  min-height: 600px;
+
+  &__container {
+    margin-top: -15px;
+  }
+
+  .logo-grace {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    @include media-breakpoint-down(lg) {
+      font-size: 1.2rem;
+      display: flex;
+      align-self: center;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 1rem;
+    }
+  }
+
+  ul {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    @include media-breakpoint-down(lg) {
+      font-size: 0.6rem;
+      margin: 0 25px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 0.6rem;
+      margin: 0 30px;
+    }
+    li {
+      font-weight: 700;
+      @include media-breakpoint-down(lg) {
+        font-size: 0.6rem;
+        margin-right: -5px;
+      }
+    }
+    a.active {
+      border: 1px solid $blue;
+      @include media-breakpoint-down(md) {
+        border: none;
+      }
+    }
+
+    li i {
+      @include media-breakpoint-down(lg) {
+        font-size: 0.6rem;
+      }
+    }
+
+    .btn-donate {
+      letter-spacing: 1px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-top: -5px;
+      @include media-breakpoint-down(lg) {
+        font-size: 0.6rem;
+        margin-right: -5px;
+      }
+    }
+  }
+
+  .address {
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 0.7px;
+    @include media-breakpoint-down(lg) {
+      font-size: 0.6rem;
+    }
+
+    i {
+      margin-top: 3px;
+      margin-left: -8px;
+      font-size: 0.7rem;
+    }
+  }
+
+  .navbar-brand {
+    position: relative;
+    height: 27px;
+    width: 18px;
+    border: 2.5px solid $navbar-color;
+    border-radius: 1px;
+    //margin-bottom: 10px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 6px;
+      background: $navbar-color;
+      height: 26px;
+      width: 3px;
+    }
+  }
+
+  .hero {
+    text-transform: uppercase;
+    margin-top: 130px;
+    position: relative;
+
+    &__title {
+      font-family: "Lato", sans-serif;
+      font-weight: 800;
+      font-size: 5.6vw;
+      letter-spacing: 6px;
+      @include media-breakpoint-down(md) {
+        font-size: 3.2rem;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 2.2rem;
+      }
+      @media screen and (max-width: 360px) {
+        font-size: 1.7rem;
+      }
+    }
+    &__pretitle {
+      font-weight: 700;
+      font-size: 1rem;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 1px;
+      @include media-breakpoint-down(md) {
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+    }
+    &__subtitle {
+      font-weight: 600;
+      text-transform: none;
+      margin-bottom: 60px;
+      margin-top: 20px;
+      letter-spacing: 1.1px;
+      font-size: 1.7rem;
+      @include media-breakpoint-down(md) {
+        font-size: 1.4rem;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 1.1rem;
+        margin-bottom: 80px;
+        margin-top: 10px;
+        font-weight: 500;
+      }
+    }
+
+    &__button {
+      margin-bottom: 60px;
+      font-weight: 600;
+      @include media-breakpoint-down(md) {
+        padding: 0.7rem 1.7rem;
+        font-size: 0.7rem;
+      }
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+  }
+
+  .arrows i.fa-long-arrow-alt-left {
+    position: absolute;
+    top: 20%;
+    left: 50px;
+    border: 1px solid $blue;
+    padding: 20px;
+    color: $white;
+    @include media-breakpoint-down(md) {
+      font-size: 0.7rem;
+      padding: 10px;
+    }
+  }
+
+  .arrows i.fa-long-arrow-alt-right {
+    position: absolute;
+    top: 20%;
+    right: 50px;
+    border: 1px solid $blue;
+    padding: 20px;
+    color: $white;
+    @include media-breakpoint-down(md) {
+      font-size: 0.7rem;
+      padding: 10px;
+    }
+  }
+
+  .dots {
+    margin-bottom: 15px;
+    span {
+      background-color: $white;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      margin: 8px 8px 50px 8px;
+    }
+  }
+  span.active {
+    box-shadow: 0px 0px 5px 3px rgba(212, 200, 212, 1);
+  }
+
+  .fluid-subheader {
+    text-transform: none;
+    background-color: $subheader-color;
+
+    .subheader {
+      padding-top: 25px;
+      padding-bottom: 15px;
+      @include media-breakpoint-down(md) {
+        font-size: 0.7rem;
+      }
+
+      &__row {
+        
+        @include media-breakpoint-down(lg) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      h6 {
+        font-size: 1rem;
+        @include media-breakpoint-down(md) {
+          font-size: 0.8rem;
+        }
+      }
+      &__date {
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 10px;
+          padding: 0px;
+        }
+      }
+
+      &__date span:first-child {
+        font-size: 1.7rem;
+        font-weight: 600;
+        display: inline-block;
+        @include media-breakpoint-down(md) {
+          font-size: 1.1rem;
+        }
+      }
+      &__date span:nth-child(2) {
+        font-size: 0.8rem;
+        padding-bottom: 8px;
+        padding-top: 0;
+        margin-top: -6px;
+        @include media-breakpoint-down(md) {
+          font-size: 0.7rem;
+        }
+      }
+
+      &__time {
+        color: $darkgrey;
+      }
+      .fa-clock {
+        margin-right: 10px;
+        font-size: 0.8rem;
+      }
+
+      &__address {
+        position: relative;
+      }
+
+      &__address::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -55px;
+        width: 1.5px;
+        height: 67px;
+        background-color: $darkgrey;
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+      }
+
+      .fa-map-marker-alt {
+        font-size: 0.8rem;
+      }
+      &__time-title,
+      &__address,
+      &__button,
+      &__arrows {
+        @include media-breakpoint-down(lg) {
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+      }
+
+      &__address p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        margin-top: 0.3rem;
+      }
+      &__address h6 {
+        font-size: 0.8rem;
+      }
+
+      button {
+        background: transparent;
+        border: 2px solid $darkgrey;
+        font-size: 0.8rem;
+        padding: 17px 35px;
+        margin-left: -70px;
+        letter-spacing: 0.9px;
+        @include media-breakpoint-down(lg) {
+          font-size: 0.6rem;
+          margin-bottom: 20px;
+          margin-left: 0px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 0.6rem;
+        }
+      }
+      button:hover {
+        background: transparentize($darkgrey, 0.7);
+        outline: none;
+      }
+
+      &__arrows {
+        color: $white;
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 12px;
+        }
+      }
+
+      .arrow-line {
+        width: 1.5px;
+        height: 40px;
+        background-color: $darkgrey;
+        margin-left: -18px;
+        margin-right: 4px;
+      }
+    }
+  }
+}
