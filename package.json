@@ -11,15 +11,15 @@
   "license": "ISC",
   "dependencies": {
     "abstracts": "^0.2.3",
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
     "parcel-bundler": "^1.12.4",
-    "popper.js": "^1.16.0",
+    "popper.js": "^1.16.1",
     "postcss-modules": "^1.4.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.1",
-    "sass": "^1.23.6"
+    "autoprefixer": "^9.7.6",
+    "sass": "^1.26.5"
   },
   "postcss": {
     "plugins": {
